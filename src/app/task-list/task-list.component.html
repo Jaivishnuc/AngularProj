@@ -1,5 +1,5 @@
 <ng-content></ng-content>
-<ul>
+<ul class="px-5">
     <li class="taskSec d-flex align-items-center justify-content-between" *ngFor="let task of tasks ; let i = index">{{ task }} 
         <button class="btn btn-success" (click)="removeTask(i)">Done</button>
     </li>
